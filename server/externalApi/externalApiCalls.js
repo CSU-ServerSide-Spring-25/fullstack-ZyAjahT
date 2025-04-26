@@ -24,7 +24,7 @@ const apiKey = '148c3ceb8a084fc0bc903924252404';
             })
     },
 
-    AlertsApi: async (location) => {
+    alertsApi: async (location) => {
         return await axios.get(`http://api.weatherapi.com/v1/alerts.json?key=${apiKey}&q=${location}`)
             .then(function (response) {
                return response.data;
