@@ -34,9 +34,4 @@ const apiKey = '148c3ceb8a084fc0bc903924252404';
                 return{ error: "Unable to fetch alerts information." }
             })
     },
-
-
-     // add alert API call hint: change forecast.json to match api wanted 
-     // add current API
-     // documentation https://www.weatherapi.com/docs/#intro-request
  }
