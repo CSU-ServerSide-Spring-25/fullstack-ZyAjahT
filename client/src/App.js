@@ -14,7 +14,7 @@ function App() {
         let url = 'http://127.0.0.1:9000'
         switch (activeTab) {
             case ('f'):
-                url += `/forecast?location=${zipCode}&days=3`;
+                url += `/forecast?location=${zipCode}&days=5`;
                 break;
             case ('c'):
                 url += `/current?location=${zipCode}`
