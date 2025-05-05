@@ -58,3 +58,29 @@ Bug-Free-Sniffle
 - The React client will be running on `http://localhost:9010`.
 
 You can access the application in your web browser at the client URL. The client will communicate with the server to fetch and display data as needed.
+
+### How To Run App 
+
+After you run the command 'npm run start' in the terminal, in your browser, the Weather Api UI should open automatically for you. Once the UI opens, you will have to enter a zipcode to get the current weather, forcast for the week, and current alerts that's happening in that area. 
+
+### API Endpoints 
+
+Endpoints that are needed: 
+   - Forcast 
+   - Current 
+   - Alerts 
+
+1. Forcast API
+   - URL: http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&days=${days}&aqi=no&alerts=no 
+   - Parameters: apiKey, location, and days
+   - Expected Responses: The weather forcast for a specific location and for the number of days provided 
+
+2. Current API 
+   - URL: http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location} 
+   - Parameters: apiKey and location 
+   - Expected Responses: The current weather for the location provided 
+
+3. Alerts API 
+   - URL: http://api.weatherapi.com/v1/alerts.json?key=${apiKey}&q=${location}
+   - Parameters: apiKey and location
+   - Expected Response: Weather alerts for location provided 
