@@ -59,6 +59,10 @@ Bug-Free-Sniffle
 
 You can access the application in your web browser at the client URL. The client will communicate with the server to fetch and display data as needed.
 
+### How To Run App 
+
+After you run the command 'npm run start' in the terminal, in your browser, the Weather Api UI should open automatically for you. Once the UI opens, you will have to enter a zipcode to get the current weather, forcast for the week, and current alerts that's happening in that area. 
+
 ### API Endpoints 
 
 Endpoints that are needed: 
