@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const { forecastApi, currentApi } = require('./externalApi/externalApiCalls'); // add additional functions comma separated example { foo, bar }
+const { forecastApi, currentApi, alertsApi } = require('./externalApi/externalApiCalls'); // add additional functions comma separated example { foo, bar }
 
 const app = express();
 const PORT = process.env.PORT || 9000;
@@ -32,7 +32,7 @@ app.get('/current', async function(req, res){
 
 app.get('/alerts', async function(req, res){
     try{
-        const result = await currentApi(req.query.location); 
+        const result = await alertsApi(req.query.location); 
         res.json(result); 
     } catch (error){
         console.error("Error in current function:", error);
